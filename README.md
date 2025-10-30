@@ -173,3 +173,6 @@ Si les tests ne couvrent pas suffisamment de code, vous devrez ajouter des tests
 Conclusion
 
 Voici un guide détaillé sur la manière d'intégrer JaCoCo dans un projet Spring Boot à l'aide de Maven. Ce guide couvre l'ajout des dépendances nécessaires, la configuration de JaCoCo, et la génération des rapports de couverture de code. En suivant ces étapes, vous pourrez vous assurer que votre code est bien testé et couvert à un niveau adéquat.
+
+
+<img width="1919" height="395" alt="image" src="https://github.com/user-attachments/assets/dda1af61-3f94-4e0c-ac21-c42e37e2ccde" />
