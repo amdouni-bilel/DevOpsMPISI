@@ -7,8 +7,10 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
 import java.util.Optional;
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -52,4 +54,12 @@ class UserServiceTest {
         userService.deleteUser(1);
         verify(userRepository, times(1)).deleteById(1);
     }
+
+    @Test
+    void testGetUserById_notFound() {
+        when(userRepository.findById(1)).thenReturn(Optional.empty());
+        Optional<User> result = userService.getUserById(1);
+        assertFalse(result.isPresent());
+    }
+
 }
