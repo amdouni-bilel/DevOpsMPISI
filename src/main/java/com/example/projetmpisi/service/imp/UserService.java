@@ -3,18 +3,21 @@ package com.example.projetmpisi.service.imp;
 import com.example.projetmpisi.entity.User;
 import com.example.projetmpisi.repository.UserRepository;
 import com.example.projetmpisi.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+
 public class UserService implements IUserService {
 
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Override
     public User saveUser(User user) {

@@ -97,6 +97,30 @@
             <version>1.4.200</version> <!-- Dernière version stable -->
             <scope>runtime</scope> <!-- Ne s'active qu'à l'exécution -->
         </dependency>
+
+        <!-- Cucumber Core -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.11.0</version> <!-- ou la dernière version disponible -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber Spring support -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-spring</artifactId>
+            <version>7.11.0</version> <!-- ou la dernière version disponible -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber JUnit 5 runner -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>7.11.0</version> <!-- ou la dernière version disponible -->
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <!-- Configuration de la phase de construction du projet -->
