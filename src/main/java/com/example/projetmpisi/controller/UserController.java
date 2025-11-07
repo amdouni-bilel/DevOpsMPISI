@@ -13,8 +13,12 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UserController {
 
+    private final IUserService userService;
+
     @Autowired
-    private IUserService userService;
+    public UserController(IUserService userService) {
+        this.userService = userService;
+    }
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
