@@ -46,5 +46,6 @@ public class UserService implements IUserService {
     @Override
     public void deleteUser(int id) {
         userRepository.deleteById(id);
+        System.out.println("User with ID " + id + " has been deleted.");
     }
 }
